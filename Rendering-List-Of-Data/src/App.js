@@ -25,13 +25,13 @@ const testData = [
 ];
 
 const App = () => {
-  const [expenses, setExpense] = useState(testData);
+  const [expenses, setExpenses] = useState(testData);
 
 
 
   const addExpenseHandler = (expense) => {
-      setExpense((prevExpense)=>{
-        return [expense, ...prevExpense]
+      setExpenses((prevExpenses)=>{
+        return [expense, ...prevExpenses]
     });
   };
   
